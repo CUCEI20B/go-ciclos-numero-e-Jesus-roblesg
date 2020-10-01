@@ -9,7 +9,7 @@ func main() {
 	var r float64
 	r = 1
 	for i := 1; i <= x; i++ {
-		r = r + 1 / (r * float64(i))
+		r += 1 / (r * float64(i))
 	}
 
 	fmt.Print(r)
